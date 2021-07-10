@@ -49,7 +49,7 @@ f3.onmouseover = function(e) {
    clearInterval(hidetimer);
    msg.classList.add("fullOpacity")
       
-   msg.innerHTML = "Self learned MERN Stack Developer. Have self learned knowledge in HTML, CSS, JavaScript, ReactJS, ExpressJS, NodeJS, Redux, PHP & UI/UX Designing <br/>Please check Featured section of my linkedin profile for links to some of my live hosted projects";
+   msg.innerHTML = "Self learned MERN Stack Developer. Have self learned knowledge in HTML, CSS, JavaScript, NodeJS, ReactJS, ExpressJS, Redux, PHP & UI/UX Designing <br/>Please check Featured section of my linkedin profile for links to some of my live hosted projects";
 
 };
 
