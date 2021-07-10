@@ -16,6 +16,8 @@ body{
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.582)),url('bg.jpg');
     background-size: cover;
     background-position: center;
+
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,6 +122,7 @@ footer i:hover{
         display: flex;
         flex-direction: column;
         width: 60%;
+        margin-top: 40px;
     }
 
     .skillBoxes .skillbox{
@@ -136,7 +139,7 @@ footer i:hover{
     h3{
 
         font-size: 15px;   
-        margin:10px;
+        margin:15px;
     }
 
     footer{
@@ -149,6 +152,7 @@ footer i:hover{
     footer{
         display: none;
     }
+
   } 
 
 
