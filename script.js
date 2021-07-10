@@ -71,3 +71,6 @@ function showSite(params) {
     body.classList.add("showSite")
     console.log("Website loaded")
 }
+
+
+//Show site called after body loaded, It added class showSite to body, which sets it opacity to 100% with transistion effect!
