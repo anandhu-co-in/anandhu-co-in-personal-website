@@ -40,7 +40,7 @@ f2.onmouseover = function(e) {
     clearInterval(hidetimer);
     msg.classList.add("fullOpacity")
       
-   msg.innerHTML = "Certified RPA Developer. Experienced in developing process automation solutions using UiPath, BluePrism and Selenium";
+   msg.innerHTML = "Certified RPA Developer. Experienced in developing Process Automation Solutions using UiPath, BluePrism and Selenium";
 
 };
 
