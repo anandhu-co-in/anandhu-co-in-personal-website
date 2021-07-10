@@ -10,6 +10,10 @@
 
 
 body{
+
+    opacity: 0;
+    transition: opacity 1s ;
+
     min-height: 100vh;
     /* background: url("bg.jpg"); */
 
@@ -156,3 +160,6 @@ footer i:hover{
   } 
 
 
+.showSite{
+    opacity: 100%;
+}

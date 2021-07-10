@@ -63,3 +63,11 @@ f1.onmouseout = f2.onmouseout = f3.onmouseout = function(e) {
     // document.getElementsByClassName("skillpoints")[0].innerHTML = "Hover on the tiles for deatils"
 
 };
+
+
+function showSite(params) {
+
+    var body = document.getElementsByTagName('body')[0]
+    body.classList.add("showSite")
+    console.log("Website loaded")
+}
