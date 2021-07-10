@@ -62,7 +62,9 @@ h3{
     text-align: center;
 
     border-radius: 3px;
-    box-shadow: 2px 2px 2px #494949;
+    box-shadow: 1px 1px 1px #00000033;
+    border: .5px solid rgba(0, 0, 0, 0.055);
+
     background-color: #ffffff27;
 
     cursor:pointer;
