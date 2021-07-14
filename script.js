@@ -144,7 +144,7 @@ function sendQuestion(){
     var askbox = document.getElementById("askbox");
 
     if (askbox.value.trim()){
-        ask(askbox.value)
+        ask(askbox.value.trim())
         askbox.value=""
     }
 }
