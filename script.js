@@ -70,6 +70,7 @@ function showSite(params) {
     var body = document.getElementsByTagName('body')[0]
     body.classList.add("showSite")
     console.log("Website loaded")
+    checkBotConnection()
 }
 
 
@@ -110,7 +111,11 @@ function ask(question){
     .then(data => {
 
         array.push(["response",data])
+        setChatBotConnStatus(1)
         updateUi()
+    })
+    .catch(()=>{
+        setChatBotConnStatus(0)
     });
 }
 
@@ -152,3 +157,37 @@ function sendQuestion(){
 var elem = document.querySelector('.chatdisplayArea');
 elem.scrollTop = elem.scrollHeight;
 
+
+function setChatBotConnStatus(status){
+    var connectionStatus = document.querySelector('.connectionStatus');
+    if(status){
+        connectionStatus.innerHTML="<div class='status connected'>Connected</div>"
+    }
+    else{
+        connectionStatus.innerHTML="<div class='status disconnected'>Connection failed</div>"
+    }
+
+}
+
+function checkBotConnection(){
+
+    fetch(`https://anandhu-co-in-bot.herokuapp.com/ask/hi`)
+    .then(response => response.text())
+    .then(data => {
+        setChatBotConnStatus(1)
+    })
+    .catch(()=>{
+        setChatBotConnStatus(0)
+    });
+
+}
+
+
+function openChatBot(){
+    console.log("open chatbot")
+}
+
+
+function hideChatBot(){
+    console.log("hide chatbot")
+}

@@ -17,6 +17,9 @@
 <body onload="showSite()">
 
     <h1>Hi, I am Anandhu</h1>
+    <h1>MY WEBSITE IS UNDER MAINTENANCE. PELSE COMBACK LATER</h1>
+    <h1>MY WEBSITE IS UNDER MAINTENANCE. PELSE COMBACK LATER</h1>
+    <h1>MY WEBSITE IS UNDER MAINTENANCE. PELSE COMBACK LATER</h1>
     <h3>Software Quality Assurance Engineer</h3>
 
     <div class="skillBoxes">
@@ -33,7 +36,10 @@
     
     <div class="chatbot">
 
-        <div class="chatbottitle">Talk to my chabot Eva!</div>
+        <div class="chatbottitle">
+            <div class="title">Talk to my chabot Eva!</div>    
+            <div class="close" onclick="hideChatBot()"> Close </div> 
+        </div>
         
         <div class="chatdisplayArea">
             ///UNDER DEVELOPMENT!//
@@ -43,11 +49,23 @@
             <div class="answer">Hello How are you</div> -->
         </div>
 
+        <div class="connectionStatus">
+            <!-- <div class="status connected">Connected</div>
+            <div class="status disconnected">Disconnected</div> -->
+        </div>
         <form id="chatbotform" onsubmit="return false">
             <input type="text" id="askbox" autocomplete="off">
             <button id="sendutton" onclick="sendQuestion()"><i class="fas fa-paper-plane"></i></button>
         </form>
 
+    </div>
+
+    <div class="chatbodetails">
+        <div class="chatBotIcon" onclick="openChatBot()">
+            <img src="chaboticon.png" alt="">
+        </div>
+        
+        Talk to Eva! You can ask her anything about me!
     </div>
 
 
