@@ -74,3 +74,65 @@ function showSite(params) {
 
 
 //Show site called after body loaded, It added class showSite to body, which sets it opacity to 100% with transistion effect!
+
+
+
+
+
+// var xmlHttp = new XMLHttpRequest();
+// xmlHttp.open( "GET", "https://anandhu-co-in-bot.herokuapp.com/ask/soosen", false ); // false for synchronous request
+// xmlHttp.send( null );
+// cpnsole.log(xmlHttp.responseText);
+
+// fetch('https://anandhu-co-in-bot.herokuapp.com/ask/soosen')
+//   .then((response) => {
+//       console.log(response)
+//     return response.json();
+//   })
+//   .then((myJson) => {
+//     console.log(myJson);
+//   });
+
+array=[]
+
+
+function ask(question){
+
+    if (question == undefined) {
+        return
+    }
+
+    array.push(["question",question])
+    updateUi()
+
+    fetch(`https://anandhu-co-in-bot.herokuapp.com/ask/${question}`)
+    .then(response => response.text())
+    .then(data => {
+
+        array.push(["response",data])
+        updateUi()
+    });
+}
+
+
+var charbotdiv = document.getElementsByClassName('chatbot')[0];
+
+function updateUi(){
+
+    charbotdiv.innerHTML=""
+
+    array.map((msg)=>{
+        if (msg[0] =="question"){
+            charbotdiv.innerHTML=charbotdiv.innerHTML+`<div class="question">${msg[1]}</div>`
+        }    
+
+        if (msg[0] =="response"){
+            charbotdiv.innerHTML=charbotdiv.innerHTML+`<div class="answer">${msg[1]}</div>`
+        }
+
+    })
+    console.log(array)
+}
+
+ask()
+

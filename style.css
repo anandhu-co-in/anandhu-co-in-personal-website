@@ -165,3 +165,35 @@ footer i:hover{
 .showSite{
     opacity: 100%;
 }
+
+
+
+
+/* CHATBOT */
+
+
+.chatbot{
+
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgb(155, 42, 42);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.question{
+
+    background: wheat;
+    margin: 5px 0px;
+
+}
+
+.answer{
+
+     background: violet;
+     margin: 5px 0px;
+
+}
