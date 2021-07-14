@@ -115,7 +115,7 @@ function ask(question){
 }
 
 
-var charbotdiv = document.getElementsByClassName('chatbot')[0];
+var charbotdiv = document.getElementsByClassName('chatdisplayArea')[0];
 
 function updateUi(){
 
@@ -132,7 +132,23 @@ function updateUi(){
 
     })
     console.log(array)
+
+    var elem = document.querySelector('.chatdisplayArea');
+elem.scrollTop = elem.scrollHeight;
 }
 
-ask()
+// ask()
+
+function sendQuestion(){
+
+    var askbox = document.getElementById("askbox");
+
+    if (askbox.value){
+        ask(askbox.value)
+        askbox.value=""
+    }
+}
+
+var elem = document.querySelector('.chatdisplayArea');
+elem.scrollTop = elem.scrollHeight;
 

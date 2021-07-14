@@ -182,6 +182,13 @@ footer i:hover{
     background: rgb(155, 42, 42);
     padding: 20px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatdisplayArea{
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 .question{
@@ -196,4 +203,22 @@ footer i:hover{
      background: violet;
      margin: 5px 0px;
 
+
+}
+
+#chatbotform{
+    background: rgb(0, 124, 31);
+    position: relative;
+}
+
+.ask{
+    background: white;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
