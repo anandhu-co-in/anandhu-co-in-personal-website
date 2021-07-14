@@ -123,11 +123,11 @@ function updateUi(){
 
     array.map((msg)=>{
         if (msg[0] =="question"){
-            charbotdiv.innerHTML=charbotdiv.innerHTML+`<div class="question">${msg[1]}</div>`
+            charbotdiv.innerHTML=charbotdiv.innerHTML+`<div class="question"> <i class="far fa-user"></i> ${msg[1]}</div>`
         }    
 
         if (msg[0] =="response"){
-            charbotdiv.innerHTML=charbotdiv.innerHTML+`<div class="answer">${msg[1]}</div>`
+            charbotdiv.innerHTML=charbotdiv.innerHTML+`<div class="answer">${msg[1]} <i class="fas fa-robot"></i> </div>`
         }
 
     })
@@ -143,7 +143,7 @@ function sendQuestion(){
 
     var askbox = document.getElementById("askbox");
 
-    if (askbox.value){
+    if (askbox.value.trim()){
         ask(askbox.value)
         askbox.value=""
     }

@@ -174,12 +174,14 @@ footer i:hover{
 
 .chatbot{
 
+    z-index: 999;
+
     width: 300px;
     height: 400px;
     position: absolute;
     bottom: 10px;
     right: 10px;
-    background: rgb(155, 42, 42);
+    background: rgb(26 75 165);
     padding: 20px;
     border-radius: 5px;
     display: flex;
@@ -189,36 +191,59 @@ footer i:hover{
 .chatdisplayArea{
     flex-grow: 1;
     overflow-y: auto;
+    margin-bottom: 10px;
+    font-size: 13px;
+    word-break: break-word;
 }
 
-.question{
-
-    background: wheat;
+.answer,.question{
     margin: 5px 0px;
+    padding: 5px;
+    border-radius: 3px;
+}
 
+
+.question{
+    /* background: rgb(153, 153, 153); */
+    text-align: left;
 }
 
 .answer{
 
-     background: violet;
-     margin: 5px 0px;
-
-
+     background: rgba(209, 209, 209, 0.171);
+     text-align: right
 }
 
 #chatbotform{
     background: rgb(0, 124, 31);
-    position: relative;
+    width: 100%;
+    display: flex;
+    min-height: 40px;
+    
 }
 
-.ask{
-    background: white;
-    color: black;
-    position: absolute;
-    bottom: 10px;
+#askbox{
+    margin: 5px 0px;
+    outline: none;
+    flex-grow: 1;
+    padding: 5px;
 }
+
+#sendutton{
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+#askbox,#sendutton{
+    margin: 0;
+}
+
 
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
+}
+
+.chatbottitle{
+    margin-bottom: 15px;
 }
