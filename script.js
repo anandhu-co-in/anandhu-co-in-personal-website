@@ -1,15 +1,3 @@
-
-var message = [
-    ["Inner HTML", "Message 2"],
-    [1,2,4,5],
-    [6,7,8,9]
-    [10,11,12,14]
-  ];
-
-var i=0
-
-
-
 var f1 = document.getElementsByClassName('skillbox')[0];
 var f2 = document.getElementsByClassName('skillbox')[1];
 var f3 = document.getElementsByClassName('skillbox')[2];
@@ -17,7 +5,7 @@ var f3 = document.getElementsByClassName('skillbox')[2];
 var msg=document.getElementsByClassName("skillpoints")[0]
 
 var fun=function(){
-    document.getElementsByClassName("skillpoints")[0].innerHTML = "Hover on the tiles for deatils";
+    // document.getElementsByClassName("skillpoints")[0].innerHTML = "Hover on the tiles for deatils";
 
 }
 
@@ -38,9 +26,8 @@ f1.onmouseover = function(e) {
 f2.onmouseover = function(e) {
     
     clearInterval(hidetimer);
-    msg.classList.add("fullOpacity")
-      
-   msg.innerHTML = "Certified RPA Developer. Experienced in developing Process Automation Solutions using UiPath, BluePrism and Selenium";
+    msg.classList.add("fullOpacity")  
+    msg.innerHTML = "Certified RPA Developer. Experienced in developing Process Automation Solutions using UiPath, BluePrism and Selenium";
 
 };
 
@@ -139,7 +126,7 @@ function updateUi(){
     console.log(array)
 
     var elem = document.querySelector('.chatdisplayArea');
-elem.scrollTop = elem.scrollHeight;
+    elem.scrollTop = elem.scrollHeight;
 }
 
 // ask()
@@ -160,11 +147,14 @@ elem.scrollTop = elem.scrollHeight;
 
 function setChatBotConnStatus(status){
     var connectionStatus = document.querySelector('.connectionStatus');
-    if(status){
+    if(status==1){
         connectionStatus.innerHTML="<div class='status connected'>Connected</div>"
     }
-    else{
+    else if(status==0){
         connectionStatus.innerHTML="<div class='status disconnected'>Connection failed</div>"
+    }
+    else{
+        connectionStatus.innerHTML=""
     }
 
 }
@@ -191,3 +181,28 @@ function openChatBot(){
 function hideChatBot(){
     console.log("hide chatbot")
 }
+
+
+function resetChat(){
+
+    array=[]
+    updateUi()
+    charbotdiv.innerHTML="Say hi!"
+    setChatBotConnStatus(2)
+    checkBotConnection()
+
+}
+
+
+var showHoverMsg=window.setInterval(function(){
+    style = window.getComputedStyle(msg),
+    opacity = style.getPropertyValue('opacity');
+    console.log("ttt")
+    console.log(top)
+
+    if(opacity==0){
+        msg.classList.add("fullOpacity")
+        msg.innerHTML = "Hover over above tiles to show more details";
+    }
+
+},2000)

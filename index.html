@@ -33,7 +33,7 @@
         </div>
         
         <div class="skillpoints">
-            Hover on the tiles for deatils
+            <!-- Hover on the tiles for deatils -->
         </div>
         
     
@@ -60,14 +60,18 @@
             <div class="chatbot">
     
                 <div class="chatbottitle">
-                    <div class="title">Talk to my chabot Eva!</div>    
-                    <div class="close" onclick="hideChatBot()"> Reset </div> 
+                    <div class="title">Talk to my Chabot Eva!</div>    
+                    <div id="chatreset" class="close" onclick="resetChat()"> Reset </div> 
                 </div>
                 
                 <div class="chatdisplayArea">
-                    ///UNDER DEVELOPMENT!//
-                    She is still under development. But you can still say Hi, and check what she replyes!
-        
+                    Say hi!
+                    
+                    <br/>
+                    <br/>
+                    <br/>
+                    <!-- // WORK IN PROGRESS // -->
+
                     <!-- <div class="question">Hello How are you</div>
                     <div class="answer">Hello How are you</div> -->
                 </div>
@@ -77,7 +81,7 @@
                     <div class="status disconnected">Disconnected</div> -->
                 </div>
                 <form id="chatbotform" onsubmit="return false">
-                    <input type="text" id="askbox" autocomplete="off">
+                    <input type="text" id="askbox" autocomplete="off" placeholder="Say something">
                     <button id="sendutton" onclick="sendQuestion()"><i class="fas fa-paper-plane"></i></button>
                 </form>
         
@@ -122,6 +126,13 @@
         <a href="https://www.instagram.com/anandhu_n7/" target="_blank"><i class="fab fa-instagram"></i></a>
 
     </footer>
+
+    <div class="copyright">
+        Copyright © 2021, anandhu.co.in. All Rights Reserved.
+    </div>
+    <div class="copyright">
+        This website (including Eva) is fully designed and developed by Me. Please connect with me if you have any questions on the source code
+    </div>
 
     <script src="script.js"></script>
 </body>

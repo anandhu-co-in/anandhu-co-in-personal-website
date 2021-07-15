@@ -37,6 +37,7 @@ h1{
     font-family: 'Lovers Quarrel', cursive;
     font-weight: normal;
     font-size: 80px;
+    cursor: default;
 }
 
 h3{
@@ -45,6 +46,7 @@ h3{
     color: rgba(255, 255, 255, 0.66);
     margin: 30px;
     margin-top: 10px;
+    cursor: default;
 }
 
 .skillBoxes{
@@ -109,6 +111,7 @@ footer i:hover{
 
 
 .skillpoints{
+    cursor: default;
     min-height: 130px;
     padding: 20px;
     margin-top: 40px;
@@ -190,7 +193,13 @@ footer i:hover{
     display: flex;
     flex-direction: column;
     margin-left: 40px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.445);
+    transition: transform .2s ease-in-out;
 }
+.chatbot:hover{
+    transform: scale(1.01);
+}
+
 
 .chatdisplayArea{
     flex-grow: 1;
@@ -213,13 +222,11 @@ footer i:hover{
 }
 
 .answer{
-
      background: rgba(209, 209, 209, 0.171);
      text-align: right
 }
 
 #chatbotform{
-    background: rgb(0, 124, 31);
     width: 100%;
     display: flex;
     min-height: 40px;
@@ -230,16 +237,28 @@ footer i:hover{
     margin: 5px 0px;
     outline: none;
     flex-grow: 1;
-    padding: 5px;
+    padding: 10px;
+    border: none;
 }
 
 #sendutton{
     flex-grow: 1;
     cursor: pointer;
+    border:none;
 }
 
 #askbox,#sendutton{
     margin: 0;
+}
+
+#sendutton{
+    margin-left: 2px;
+    transition: background-color .2s;
+}
+
+#sendutton:hover{
+    margin-left: 2px;
+    background-color: rgb(223, 221, 221);
 }
 
 
@@ -251,6 +270,7 @@ footer i:hover{
 .chatbottitle{
     margin-bottom: 15px;
     display: flex;
+    /* background-color: rgb(173, 98, 98); */
 }
 
 .chatbottitle .title{
@@ -342,11 +362,11 @@ footer i:hover{
 
 }
 
-.chatBotIcon:hover{
-    transform: scale(1.1);
+/* .chatBotIcon:hover{
+    transform: scale(1.05);
     cursor: pointer;
     background-color: rgb(255, 255, 255);
-}
+} */
 
 .chatBotIcon img{
     height: 100px;
@@ -383,5 +403,11 @@ footer i:hover{
         font-size: 10px;
     }
 
+}
 
+
+.copyright{
+    padding-bottom: 10px;
+    text-align: center;
+    opacity: .5;
 }
