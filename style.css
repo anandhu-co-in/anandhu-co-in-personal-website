@@ -154,8 +154,8 @@ footer i:hover{
         margin:15px;
     }
 
-    footer{
-        font-size: 20px;
+    footer,.copyright{
+        font-size: 10px;
     }
 
   }
