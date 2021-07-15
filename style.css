@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
 
 *{
     box-sizing: border-box;
@@ -14,26 +15,28 @@ body{
     opacity: 0;
     transition: opacity 1s ;
 
-    min-height: 100vh;
     /* background: url("bg.jpg"); */
 
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.582)),url('bg.jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.753)),url('bg2.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     color: white;
     background-repeat: no-repeat;
 }
 
 
 h1{
-    font-family: 'Raleway Dots';
-    font-size: 50px;
+    /* font-family: 'Raleway Dots'; */
+    font-family: 'Lovers Quarrel', cursive;
+    font-weight: normal;
+    font-size: 80px;
 }
 
 h3{
@@ -41,6 +44,7 @@ h3{
     font-weight: 100;
     color: rgba(255, 255, 255, 0.66);
     margin: 30px;
+    margin-top: 10px;
 }
 
 .skillBoxes{
@@ -84,8 +88,8 @@ h3{
 
 footer{
     font-size: 30px;
-    position: fixed;
-    bottom: 10px
+    text-align: center;
+    padding: 30px;
 }
 
 footer i{
@@ -105,16 +109,15 @@ footer i:hover{
 
 
 .skillpoints{
-    min-height: 150px;
+    min-height: 130px;
     padding: 20px;
     margin-top: 40px;
-    opacity: 5%;
+    opacity: 0%;
     color: rgba(255, 255, 255, 0.788);
     transition: opacity .4s;
     text-align: center;
     /* border-radius: 30px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0)); */
-    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0)); */    
 }
 
 .fullOpacity{
@@ -139,7 +142,7 @@ footer i:hover{
     }
 
     h1{
-        font-size: 30px;
+        font-size: 50px;
     }
 
     h3{
@@ -178,14 +181,15 @@ footer i:hover{
 
     width: 300px;
     height: 400px;
-    position: absolute;
+    /* position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: 10px; */
     background: rgb(26 75 165);
     padding: 20px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    margin-left: 40px;
 }
 
 .chatdisplayArea{
@@ -282,10 +286,47 @@ footer i:hover{
 
 
 
+
+
+/* Section */
+
+.mainsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding-top: 40px;
+}
+
+.chatbotsection{
+    background: #443d3e;
+    padding: 50px 30px;    
+}
+.chatbotsection .middle{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.chatbotsection .top{
+    text-align: center;
+}
+
+.chatbotsection .bottom{
+    text-align: center;
+}
+
+
+
+
+
 /* temp */
 
 .chatbodetails{
     text-align: center;
+    margin-right: 40px;
 }
 
 .chatBotIcon{
@@ -296,7 +337,7 @@ footer i:hover{
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-
+    margin-bottom: 20px;
     transition: transform .2s, background-color .2s ;
 
 }
@@ -310,4 +351,37 @@ footer i:hover{
 .chatBotIcon img{
     height: 100px;
     width: 100px;
+}
+
+
+@media only screen and (max-width: 790px) {
+
+
+    .chatbotsection .middle{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .chatbodetails{
+        margin-right: 0px
+    }
+    
+    .chatbot{
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    
+    .chatBotIcon img,.chatBotIcon{
+        height: 60px;
+        width: 60px;
+    }
+
+    .skillpoints{
+        font-size: 10px;
+    }
+
+
 }
