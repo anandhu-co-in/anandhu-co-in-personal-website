@@ -157,9 +157,9 @@ footer i:hover{
   }
 
   @media only screen and (max-height: 460px){
-    footer{
+    /* footer{
         display: none;
-    }
+    } */
 
   } 
 

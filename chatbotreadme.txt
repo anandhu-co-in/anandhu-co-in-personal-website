@@ -33,4 +33,4 @@ I need your help in training this bot
 How? 
 -- Either you can just talk to the bot as much as you can, Ask it whatever you are intrested to know about me (Never mind the responses it gives)
 -- Or you can connect with me and send me the questions!
--- If you noticed some issue, or have suggession about this website, you can also mention it through the chatbot! -eg: "Hey i found a bug, the image doesnt load" or "Hey anandhu, i noticed a spelling mistake.."
+-- If you noticed some bug, or have suggession about this website, you can also mention it through the chatbot! -eg: "Hey i found a bug, the image doesnt load" or "Hey anandhu, i noticed a spelling mistake.."
