@@ -112,7 +112,7 @@ footer i:hover{
 
 .skillpoints{
     cursor: default;
-    min-height: 130px;
+    min-height: 80px;
     padding: 20px;
     margin-top: 40px;
     opacity: 0%;
@@ -154,10 +154,6 @@ footer i:hover{
         margin:15px;
     }
 
-    footer,.copyright{
-        font-size: 10px;
-    }
-
   }
 
   @media only screen and (max-height: 460px){
@@ -187,7 +183,7 @@ footer i:hover{
     /* position: absolute;
     bottom: 10px;
     right: 10px; */
-    background: rgb(26 75 165);
+    background: #3966b9;
     padding: 20px;
     border-radius: 5px;
     display: flex;
@@ -403,6 +399,14 @@ footer i:hover{
         font-size: 10px;
     }
 
+    footer,.copyright{
+        font-size: 10px;
+    }
+
+    .skillpoints {
+        min-height: 80px;
+    }
+
 }
 
 
@@ -410,4 +414,54 @@ footer i:hover{
     padding-bottom: 10px;
     text-align: center;
     opacity: .5;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .chatbot{
+        height: 250px;
+        font-size: 10px;
+    }
+
+    .chatdisplayArea,#chatbotform{
+        font-size: 10px;
+        min-height: 0;
+    }
+
+   #askbox,#sendutton{
+        height: 25px;
+    }
+
+    footer i{
+        margin: 2px;
+    }
+
+    footer{
+        padding: 15px;
+    }
+
+    footer,.copyright{
+        font-size: 5px;
+    }
+}
+
+
+
+@media only screen and (max-width: 322px) {
+
+    .chatbot,#chatbotform{
+
+        display: none;
+    }
+
+}
+
+
+
+.chatbotsection a{
+    color: white;
+    /* text-decoration: none; */
 }

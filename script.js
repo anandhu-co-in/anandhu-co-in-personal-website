@@ -135,8 +135,10 @@ function sendQuestion(){
 
     var askbox = document.getElementById("askbox");
 
-    if (askbox.value.trim()){
-        ask(askbox.value.trim())
+    question=askbox.value.trim().toLowerCase().replaceAll('/','').replaceAll('\\','')
+
+    if (question){
+        ask(question)
         askbox.value=""
     }
 }
