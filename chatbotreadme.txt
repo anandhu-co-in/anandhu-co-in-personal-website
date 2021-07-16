@@ -9,7 +9,7 @@ What can you ask?
 -----------------
 
 Here are some sample questions which works now.. 
-But please do not stick to just these, Try experimenting with whaver questions you have!
+But please do not stick to just these, Try experimenting with whatever questions you have!
 
 1. Hi, Hello, hw r u etc
 2. Say a joke, whats your name, who r u?
@@ -20,6 +20,7 @@ But please do not stick to just these, Try experimenting with whaver questions y
 7. gf name?
 8. fav movie, fav song etc
 9. sing a song!
+10. how do you work
 .
 .
 
