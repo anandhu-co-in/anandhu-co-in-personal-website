@@ -1,11 +1,22 @@
-
-My Personal Chatbot Read Me!
+My Personal Chatbot project
+---------------------------
 
 I deployed this very recently after training with very limited data. So it maynot repond well at the moment
 But the more people use it, the more it learns!
 
+I NEED YOUR HELP !
+-----------------
 
-What can you ask?
+I need your help in training this bot
+
+How? 
+-- Either you can just talk to the bot as much as you can, Ask it whatever you are intrested to know about me (Never mind the responses it gives)
+-- As it as much varity of question as you can!
+-- Or you can connect with me and send me the questions!
+-- If you noticed some bug, or have suggession about this website, you can also mention it through the chatbot! -eg: "Hey i found a bug, the image doesnt load" or "Hey anandhu, i noticed a spelling mistake.."
+
+
+What works now?
 -----------------
 
 Here are some sample questions which works now.. 
@@ -25,13 +36,7 @@ But please do not stick to just these, Try experimenting with whatever questions
 .
 
 
+ThankYou❤️
+mail.anandhu@gmail.com
 
-I NEED YOUR HELP !
------------------
 
-I need your help in training this bot
-
-How? 
--- Either you can just talk to the bot as much as you can, Ask it whatever you are intrested to know about me (Never mind the responses it gives)
--- Or you can connect with me and send me the questions!
--- If you noticed some bug, or have suggession about this website, you can also mention it through the chatbot! -eg: "Hey i found a bug, the image doesnt load" or "Hey anandhu, i noticed a spelling mistake.."

@@ -226,3 +226,11 @@ function hideTypingDots(){
     typingdotsDiv.innerHTML=""
 }
 
+
+// Page reload when clicking back button
+
+// https://stackoverflow.com/questions/43043113/how-to-force-reloading-a-page-when-using-browser-back-button
+
+  if(performance.navigation.type == 2){
+    location.reload(true);
+ }
