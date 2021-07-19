@@ -93,15 +93,18 @@ function ask(question){
     array.push(["question",question])
     updateUi()
 
+    showTypingDots()
+
     fetch(`https://anandhu-co-in-bot.herokuapp.com/ask/${question}`)
     .then(response => response.text())
     .then(data => {
-
+        hideTypingDots()
         array.push(["response",data])
         setChatBotConnStatus(1)
         updateUi()
     })
     .catch(()=>{
+        hideTypingDots()
         setChatBotConnStatus(0)
     });
 }
@@ -208,3 +211,18 @@ var showHoverMsg=window.setInterval(function(){
     }
 
 },2000)
+
+
+// Functions to show and hide the typing dots
+
+var typingdotsDiv = document.getElementById("typing-dots");
+
+function showTypingDots(){
+    typingdotsDiv.innerHTML="<div class=\"dot\"></div><div class=\"dot\"></div><div class=\"dot\"></div>"
+}
+
+
+function hideTypingDots(){
+    typingdotsDiv.innerHTML=""
+}
+
