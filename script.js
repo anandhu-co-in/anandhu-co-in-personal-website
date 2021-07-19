@@ -234,3 +234,8 @@ function hideTypingDots(){
   if(performance.navigation.type == 2){
     location.reload(true);
  }
+
+// var perfEntries = performance.getEntriesByType("navigation");
+// if (perfEntries[0].type === "back_forward") {
+//     location.reload(true);
+// }
