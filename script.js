@@ -95,7 +95,7 @@ function ask(question){
 
     showTypingDots()
 
-    fetch(`https://anandhu-co-in-bot.herokuapp.com/ask/${question}`)
+    fetch(`https://anandhu-co-in-dl.herokuapp.com/ask/${question}`)
     .then(response => response.text())
     .then(data => {
         hideTypingDots()
