@@ -166,7 +166,7 @@ function setChatBotConnStatus(status){
 
 function checkBotConnection(){
 
-    fetch(`https://anandhu-co-in-bot.herokuapp.com/ask/hi`)
+    fetch(`https://anandhu-co-in-dl.herokuapp.com/ask/hi`)
     .then(response => response.text())
     .then(data => {
         setChatBotConnStatus(1)
