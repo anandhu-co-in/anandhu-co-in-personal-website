@@ -126,7 +126,7 @@ function updateUi(){
         }
 
     })
-    console.log(array)
+    // console.log(array)
 
     var elem = document.querySelector('.chatdisplayArea');
     elem.scrollTop = elem.scrollHeight;
@@ -179,12 +179,12 @@ function checkBotConnection(){
 
 
 function openChatBot(){
-    console.log("open chatbot")
+    // console.log("open chatbot")
 }
 
 
 function hideChatBot(){
-    console.log("hide chatbot")
+    // console.log("hide chatbot")
 }
 
 
@@ -202,8 +202,8 @@ function resetChat(){
 var showHoverMsg=window.setInterval(function(){
     style = window.getComputedStyle(msg),
     opacity = style.getPropertyValue('opacity');
-    console.log("ttt")
-    console.log(top)
+    // console.log("ttt")
+    // console.log(top)
 
     if(opacity==0){
         msg.classList.add("fullOpacity")
