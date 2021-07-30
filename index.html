@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>anandhu.co.in</title>
-
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
-
     <link rel="stylesheet" rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body onload="showSite()">
 
     <section class="mainsection">
@@ -24,14 +23,12 @@
         <div class="skillBoxes">
             <div class="skillbox"><div class="text">Quality Assurance</div></div>
             <div class="skillbox"><div class="text">Robotic Process Automation</div></div>
-            <div class="skillbox"><div class="text">Web Development</div></div>
-            
+            <div class="skillbox"><div class="text">Web Development</div></div>            
         </div>
         
         <div class="skillpoints">
-            <!-- Hover on the tiles for deatils -->
+            <!-- Will be populated by javascript -->
         </div>
-        
     
     </section>
 
@@ -46,7 +43,7 @@
 
             <div class="chatbodetails">
                 <div class="chatBotIcon" onclick="openChatBot()">
-                    <img src="cbico.png" alt="">
+                    <img src="images/cbico.png" alt="">
                 </div>
                 Talk to Me!
                 <div>Here is my Personal Chatbot!</div><br/>
@@ -76,8 +73,6 @@
                       
                 </div>
 
-
-
                 <!-- TYPING DOTS ANIMATION -->
                 <div class="typing" id="typing-dots">
                     <!-- <div class="dot"></div>
@@ -89,28 +84,23 @@
                     <!-- <div class="status connected">Connected</div>
                     <div class="status disconnected">Disconnected</div> -->
                 </div>
+                
                 <form id="chatbotform" onsubmit="return false">
                     <input type="text" id="askbox" autocomplete="off" placeholder="Say something">
                     <button id="sendutton" onclick="sendQuestion()">Send</button>
                     <!-- <button id="sendutton" onclick="sendQuestion()"><i class="fas fa-paper-plane"></i>↵</button> -->
                 </form>
-        
+
             </div>
-
-            
-
         </div>
-
 
         <div class="bottom">
             <!-- Experimental features -->
         </div>
 
-
     </section>
 
     <footer>
-
         <!-- <a href="https://www.facebook.com/anandhukrishnan.vk/" target="_blank"><i class="fab fa-facebook"></i></a> -->
         <a href="https://github.com/anandhu-co-in" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/anandhukrishnanv/" target="_blank" ><i class="fab fa-linkedin"></i></a>
@@ -122,8 +112,9 @@
     <div class="copyright">
         Copyright © 2021, www.anandhu.co.in. All Rights Reserved.
     </div>
+
     <div class="copyright">
-        This website (including chatbot) is fully designed and developed by Me. Please connect with me if you have any questions on the source code
+        This website (including chatbot) is fully designed and developed by me. Please connect with me if you have any questions on the source code
     </div>
 
     <script src="script.js"></script>
