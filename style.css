@@ -401,6 +401,7 @@ footer i:hover{
 
     footer,.copyright{
         font-size: 10px;
+        padding: 5px;
     }
 
     .skillpoints {
@@ -440,11 +441,12 @@ footer i:hover{
     }
 
     footer{
-        padding: 15px;
+        padding: 5px;
     }
 
     footer,.copyright{
         font-size: 5px;
+        padding-bottom:0;
     }
 }
 
