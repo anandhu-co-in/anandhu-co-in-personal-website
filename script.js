@@ -98,7 +98,7 @@ elem.scrollTop = elem.scrollHeight;
 function setChatBotConnStatus(status){
     var connectionStatus = document.querySelector('.connectionStatus');
     if(status==1){
-        connectionStatus.innerHTML="<div class='status connected'>Connected</div>"
+        connectionStatus.innerHTML="<div class='status connected'>Online</div>"
     }
     else if(status==0){
         connectionStatus.innerHTML="<div class='status disconnected'>Connection failed</div>"
