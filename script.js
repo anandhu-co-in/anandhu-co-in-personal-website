@@ -25,7 +25,7 @@ f2.onmouseover = function(e) {
 f3.onmouseover = function(e) {
    clearInterval(hidetimer);
    msg.classList.add("fullOpacity")
-   msg.innerHTML = "Self learned MERN Stack Developer through Debug Media & Crossroads.<br/>Have good knowledge in HTML, CSS, JavaScript, NodeJS, ReactJS, ExpressJS, Redux, PHP & UI/UX Designing";
+   msg.innerHTML = "Self learned MERN Stack Developer through Debug Media & Brototype.<br/>Have good knowledge in HTML, CSS, JavaScript, NodeJS, ReactJS, ExpressJS, Redux, PHP & UI/UX Designing";
 };
 
 f1.onmouseout = f2.onmouseout = f3.onmouseout = function(e) {
