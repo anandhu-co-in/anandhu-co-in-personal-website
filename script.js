@@ -1,6 +1,9 @@
 var f1 = document.getElementsByClassName('skillbox')[0];
 var f2 = document.getElementsByClassName('skillbox')[1];
 var f3 = document.getElementsByClassName('skillbox')[2];
+var f4 = document.getElementsByClassName('skillbox')[3];
+var f5 = document.getElementsByClassName('skillbox')[4];
+var f6 = document.getElementsByClassName('skillbox')[5];
 
 var msg=document.getElementsByClassName("skillpoints")[0]
 
@@ -12,23 +15,45 @@ var hidetimer=window.setInterval(fun,1000)
 
 f1.onmouseover = function(e) {
     clearInterval(hidetimer);
-    msg.innerHTML = "I have 3.7 Years of Industry Experience in Manual & Automation Testing of Web & Mobile Applications.<br/>Have worked on Selenium, Java, TestNG, Appium, Jira, qTest, Perfecto and Cucumber.";
+    msg.innerHTML = "Java, JavaScript, Python, C#, C++";
     msg.classList.add("fullOpacity")
 };
 
 f2.onmouseover = function(e) {
     clearInterval(hidetimer);
     msg.classList.add("fullOpacity")  
-    msg.innerHTML = "Certified RPA Developer.<br/>Experienced in developing Process Automation Solutions using UiPath, BluePrism and Selenium.";
+    msg.innerHTML = "Manual Testing, Jira, qTest";
 };
 
 f3.onmouseover = function(e) {
    clearInterval(hidetimer);
    msg.classList.add("fullOpacity")
-   msg.innerHTML = "Self learned MERN Stack Developer through Debug Media & Brototype.<br/>Have good knowledge in HTML, CSS, JavaScript, NodeJS, ReactJS, ExpressJS, Redux, PHP & UI/UX Designing.";
+   msg.innerHTML = "Selenium, TestNG, Appium, UiPath, BluePrism";
 };
 
-f1.onmouseout = f2.onmouseout = f3.onmouseout = function(e) {
+
+f4.onmouseover = function(e) {
+    clearInterval(hidetimer);
+    msg.classList.add("fullOpacity")
+    msg.innerHTML = "Azure CICD, Jenkins, Docker, Kubernetes";
+ };
+
+ 
+f5.onmouseover = function(e) {
+    clearInterval(hidetimer);
+    msg.classList.add("fullOpacity")
+    msg.innerHTML = "HTML, CSS, JavaScript, Node JS, React, Redux, Express";
+ };
+
+ 
+f6.onmouseover = function(e) {
+    clearInterval(hidetimer);
+    msg.classList.add("fullOpacity")
+    msg.innerHTML = "Git, GitHub, SQL Server, MongoDB, DL, Figma";
+ };
+ 
+
+f1.onmouseout = f2.onmouseout = f3.onmouseout = f4.onmouseout= f5.onmouseout= f6.onmouseout = function(e) {
     hidetimer = setInterval(fun, 1000);
     msg.classList.remove("fullOpacity")
 };
