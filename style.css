@@ -11,7 +11,7 @@
 }
 
 .dev-message{
-  background-color: rgba(236, 0, 0, 0.39);
+  background-color: rgba(236, 0, 0, 0.205);
   position: fixed;
   z-index: 9999;
   font-size: 10px;
@@ -435,6 +435,12 @@ small{
 
 /* Certifications section */
 
+.certificationssection{
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
 .certificationssection .badges{
     /* margin: 50px 0px; */
     padding: 10px;
@@ -521,6 +527,7 @@ small{
   padding: 40px;
   backdrop-filter: saturate(100%) blur(5px);
   line-height: 2rem;
+  user-select: none;
 }
 
 .social-icons{
@@ -939,6 +946,8 @@ small{
   /* backdrop-filter: saturate(100%) blur(10px); */
   padding-top: 30px;
   padding-bottom: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .contactsection .container{
