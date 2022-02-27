@@ -4,6 +4,8 @@ My Personal Chatbot project
 Deployed this very recently after training with very limited data. So it maynot repond well at the moment
 The more people use it, the more it learns!
 
+Powered by : Python, Tensorflow
+
 SUPPORT TRAINING THIS CHATBOT
 --------------------------
 
