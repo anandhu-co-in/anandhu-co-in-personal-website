@@ -566,8 +566,10 @@ small{
   display: flex;
   width: 100%;
   background-color: rgb(80, 80, 80);
+  /* background-color: #3966b9; */
   align-items: center;
   z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.397);
 }
 
 .main-nav .container{
